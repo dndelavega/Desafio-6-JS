@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Conversor de monedas Nacional</title>
+</head>
+
+<body>
+
+    <div class="pagina">
+        <h1>Conversor de monedas Nacional</h1>
+                <h2>Pesos CLP</h2>
+                    <input type="number" id="inputPesos" placeholder="Ingrese el monto en CLP" >
+                    <h3>Moneda a convertir:</h3>
+                        <select id="selectPesos">
+                            <option value="Seleccione moneda">Seleccione moneda</option>
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                            <option value="uf">UF</option>
+                            <option value="utm">UTM</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+                        <button class="btnConvertir" id="btnConvertir">Buscar</button>
+            <p><span id="pesosDisplay"></span><span id="resultadoDisplay"></span></p>
+
+        <div>
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+    
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
